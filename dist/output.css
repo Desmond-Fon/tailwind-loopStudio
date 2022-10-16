@@ -633,6 +633,10 @@ video {
   margin-right: 1.25rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -806,6 +810,10 @@ video {
   font-weight: 300;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .tracking-widest {
   letter-spacing: 0.1em;
 }
@@ -832,6 +840,16 @@ video {
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:uppercase {
+    text-transform: uppercase;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1030,6 +1048,14 @@ video {
     margin-right: 0.75rem;
   }
 
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1070,8 +1096,16 @@ video {
     justify-content: space-between;
   }
 
+  .lg\:bg-transparent {
+    background-color: transparent;
+  }
+
   .lg\:bg-\[url\(\'images\/desktop\/image-hero\.jpg\'\)\] {
     background-image: url('images/desktop/image-hero.jpg');
+  }
+
+  .lg\:bg-none {
+    background-image: none;
   }
 
   .lg\:p-20 {
@@ -1128,6 +1162,26 @@ video {
     line-height: 1.25rem;
   }
 
+  .lg\:font-normal {
+    font-weight: 400;
+  }
+
+  .lg\:uppercase {
+    text-transform: uppercase;
+  }
+
+  .lg\:lowercase {
+    text-transform: lowercase;
+  }
+
+  .lg\:capitalize {
+    text-transform: capitalize;
+  }
+
+  .lg\:normal-case {
+    text-transform: none;
+  }
+
   .lg\:text-gray-700 {
     --tw-text-opacity: 1;
     color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -1136,5 +1190,10 @@ video {
   .lg\:text-gray-500 {
     --tw-text-opacity: 1;
     color: rgb(107 114 128 / var(--tw-text-opacity));
+  }
+
+  .lg\:first-letter\:text-sm::first-letter {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }

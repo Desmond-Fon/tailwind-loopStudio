@@ -15,17 +15,21 @@
   </head>
   <body class="font-Josefin">
     <header class="bg-[url('images/mobile/image-hero.jpg')]  lg:bg-[url('images/desktop/image-hero.jpg')] bg-cover bg-no-repeat lg:pt-16 lg:pb-20 lg:px-28 px-5 pt-10 pb-60">
-      <nav class="flex justify-between items-center ">
-        <img src="images/logo.svg" alt="" class="h-5" />
-        <img src="images/icon-hamburger.svg" alt="" class="lg:hidden">
-        <ul class=" text-white hidden lg:flex">
-          <li class="p-2 text-sm"><a href="#">About</a></li>
-          <li class="p-2 text-sm"><a href="#">Careers</a></li>
-          <li class="p-2 text-sm"><a href="#">Events</a></li>
-          <li class="p-2 text-sm"><a href="#">Product</a></li>
-          <li class="p-2 text-sm"><a href="#">Support</a></li>
-        </ul>
-      </nav>
+        <div class="flex justify-between">
+          <img src="images/logo.svg" alt="" class="h-5 lg:hidden " />
+          <img src="images/icon-hamburger.svg" alt="" class="lg:hidden" id="burger">
+         </div>
+        <nav class=" justify-between items-center flex bg-black lg:bg-transparent ">
+          <img src="images/logo.svg" alt="" class="h-5 hidden lg:flex" />
+          <ul class=" text-white hidden lg:flex mt-20 lg:mt-0 mb-20 lg:mb-0" id="menu">
+            <li class="p-2 lg:text-sm uppercase lg:font-normal font-light lg:capitalize text-2xl"><a href="#">About</a></li>
+            <li class="p-2 lg:text-sm lg:font-normal font-light uppercase lg:capitalize text-2xl"><a href="#">Careers</a></li>
+            <li class="p-2 lg:text-sm lg:font-normal font-light uppercase text-2xl lg:capitalize"><a href="#">Events</a></li>
+            <li class="p-2 lg:text-sm lg:font-normal font-light uppercase text-2xl lg:capitalize"><a href="#">Product</a></li>
+            <li class="p-2 lg:text-sm lg:font-normal font-light uppercase text-2xl lg:capitalize"><a href="#">Support</a></li>
+          </ul>
+        </nav>
+      </div>
       <div>
         <h1 class="text-white lg:py-6 lg:px-8 lg:mt-20 lg:mb-10 border border-solid border-white font-light lg:text-6xl lg:w-1/2 w-full p-5 text-4xl flex mt-36  tracking-widest">IMMERSIVE EXPERIENCES THAT DELIVER</h1>
       </div>
@@ -129,5 +133,6 @@
         <p class="font-light text-sm text-gray-400 hidden lg:flex">© 2021 Loopstudios. All rights reserved.</p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
